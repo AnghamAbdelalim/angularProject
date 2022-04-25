@@ -1,0 +1,55 @@
+{
+    "nav":
+           {
+            "text1":"Off 50%! Shop Now",
+            "text2":"Call US :- ",
+            "text3":"+11 900 800 100",
+            "text4":"My Account",
+            "text5":"Our location",
+            "text6":"Contact US"
+         },
+         "header":
+         {
+            "text1":"Home",
+            "text2":"About Us",
+            "text3":"Products",
+            "text4":"Sign in",
+            "text5":"Log in", 
+            "text6":"Log out",
+            "text7":"Contact US",
+            "text8":"Cart"
+         },
+         "home":
+         {
+            "text1":"Welcome To Thewayshop",
+            "text2":"See how your users experience your website in realtime or view trends to see any changes in performance over time.",
+            "text3":"Shop New"
+         },
+         "register":
+         {
+            "text1":"Create New Account",
+            "text2":"UserName",
+            "text3":"Email Address",
+            "text4":"Password",
+            "text5":"Confirm Password",
+            "text6":"Register"
+         },
+         "Product":
+         {
+            "text1":"Buy",
+            "text2":"Sale"
+
+         },
+         "Cart":
+         {
+
+         },
+         "login":
+         {
+            "text1":"Account Login",
+            "text2":"User Name",
+            "text3":"Password",
+            "text4":"Forget Password ?",
+            "text5":"Login"
+         }
+}

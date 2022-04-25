@@ -1,0 +1,40 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="cart-box-main">
+    <div class="container">
+<div class="col-sm-6 col-lg-6 mb-3">
+    <div class="title-left">
+        <h3>{{'login.text1'|translate}}</h3>
+    </div>
+    <div class="form-content" [formGroup]="LoginForm"  (ngSubmit)="login(LoginForm.value)">
+     <div class="form-group">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="InputName" class="mb-0">{{'login.text2'|translate}}</label>
+                <input type="Name" formControlName="Name" class="form-control" id="InputName" placeholder="Enter Name" value="">
+                <div *ngIf="Name.invalid && Name.touched">
+                    <small class="text-danger" *ngIf="Name.errors.required">User Name is required</small>
+                 </div>
+             </div>
+            <div class="form-group col-md-6">
+                <label for="InputPassword" class="mb-0">{{'login.text3'|translate}}</label>
+                <input type="password" formControlName="password"  class="form-control" id="InputPassword" placeholder="Password" value="">
+                <div *ngIf="password.invalid && password.touched">
+                    <small class="text-danger" *ngIf="password.errors.required">Password is required</small>
+                </div> 
+            </div>
+            <div>
+                <p style="color:#E92626;font-size:20px;font-weight:normal" Class="success">
+                    {{errorMessage}}
+                </p>
+            </div>
+        </div>
+        <a routerLink="/forget">{{'login.text4'|translate}}</a>
+        <button type="submit" [routerLink]="['/home']" class="btn hvr-hover">{{'login.text5'|translate}}</button>
+       
+    </div>
+    </div>
+</div>
+</div>
+</div>

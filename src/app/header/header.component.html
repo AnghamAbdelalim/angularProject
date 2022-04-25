@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Ecommerce </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/assets/css/style.css">
+     <link rel="stylesheet" href="/assets/css/responsive.css">
+     <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+
+<body>
+    <header>
+    <nav>
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                              
+                                <li>
+                                    <i class="fab fa-opencart"></i> {{'nav.text1'|translate}}
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="custom-select-box">
+                    <select #langSelect (change)="translate.use(langSelect.value)">
+						<option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
+					</select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>{{'nav.text2'|translate}}:- <a href="#"> {{'nav.text3'|translate}}</a></p>
+                    </div>
+                    <div class="our-link">
+                        <ul>
+                            <li><a href="#">{{'nav.text4'|translate}}</a></li>
+                            <li><a href="#">{{'nav.text5'|translate}}</a></li>
+                            <li><a href="#"></a>{{'nav.text6'|translate}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <header class="main-header">
+     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+              
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="index.html"><img src="/assets/images/logo.png" class="logo" alt=""></a>
+                </div>
+            
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">{{'header.text1'|translate}}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">{{'header.text2'|translate}}</a></li>
+                        <li class="dropdown megamenu-fw">
+                            <a routerLink="products"  class="nav-link dropdown-toggle arrow" data-toggle="dropdown">{{'header.text3'|translate}}</a>
+                            
+                        </li>
+                        <li class="nav-item"><a class="nav-link" *ngIf="logFlag" routerLink="Register">{{'header.text4'|translate}} </a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="Login">{{'header.text5'|translate}} </a></li>
+                        <li class="nav-item"><a class="nav-link" *ngIf="!logFlag"(click)=" LogOut()">{{'header.text6'|translate}}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">{{'header.text7'|translate}}</a></li>
+                    </ul>
+                </div>
+             
+                <div class="attr-nav">
+                    <ul>
+                        <li class="side-menu"><a routerLink="cart">
+						<i class="fa fa-shopping-cart">{{'header.text8'|translate}}</i>
+                    
+					</a></li>
+                    </ul>
+                </div>
+             
+            </div>
+           </nav>
+    </header>
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<script src="/assets/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.superslides.min.js"></script>
+<script src="/assets/js/bootstrap-select.js"></script>
+<script src="/assets/js/inewsticker.js"></script>
+<script src="/assets/js/bootsnav.js."></script>
+<script src="/assets/js/images-loded.min.js"></script>
+<script src="/assets/js/isotope.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/baguetteBox.min.js"></script>
+<script src="/assets/js/form-validator.min.js"></script>
+<script src="/assets/js/contact-form-script.js"></script>
+<script src="/assets/js/custom.js"></script>
